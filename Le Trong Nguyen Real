@@ -1,0 +1,48 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Le Trong Nguyen Real🌸", HidePremium = false,
+    IntroText="Le Trong Nguyen Real" ,SaveConfig = true, ConfigFolder = "LeTrongNguyenReal🌸"})
+
+OrionLib:MakeNotification({
+	Name = "XIN CHÀO ",
+	Content = "Script được làm bởi Le Trong Nguyen Real ",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Tab Chính",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Le Trong Nguyen Real Dep Trai🌸"
+})
+
+Tab:AddButton({
+	Name = "Blox Fruit Vip",
+	Callback = function()
+      		print("button pressed")
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/Script-Blox/Script/main/Script-Blox'))()
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "Fly Made By Le Trong Nguyen Real",
+	Callback = function()
+      		print("button pressed")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/junyoungboi99/Script-fly-vip-made-by-Le-Trong-Nguyen-Real-/main/Script-fly-vip-made-by-LeTrongNguyenReal'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Script Admin",
+	Callback = function()
+      		print("button pressed")
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+  	end    
+})
+
+OrionLib:Init()
